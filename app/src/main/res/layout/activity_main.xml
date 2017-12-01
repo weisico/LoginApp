@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    tools:context="com.weisico.loginapp.MainActivity">
+
+    <ImageView
+        android:id="@+id/Image"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/TvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/EdName"
+        android:text="用户名:"
+        android:textSize="20sp"
+        />
+
+    <EditText
+        android:id="@+id/EdName"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/TvName"
+        android:layout_below="@id/Image"
+        android:hint="请输入用户名"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/TvPsw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/EdPsw"
+        android:layout_below="@id/EdName"
+        android:text="密    码:"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/EdPsw"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EdName"
+        android:layout_toRightOf="@+id/TvPsw"
+        android:hint="请输入密码"
+        android:textSize="20sp"
+        android:inputType="textPassword"
+        android:maxLength="30"/>
+
+    <Button
+        android:id="@+id/BtnOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EdPsw"
+        android:text="登录"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/BtnRest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EdPsw"
+        android:layout_toRightOf="@id/BtnOk"
+        android:text="重置"
+        android:textSize="20sp" />
+
+</RelativeLayout>
+
